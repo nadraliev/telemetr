@@ -1,4 +1,4 @@
-      subroutine trimle(tutm,az,itower,ntower,coor,sd,kappa,vc,
+      subroutine trimle1(tutm,az,itower,ntower,coor,sd,kappa,vc,
      1   ijob,ierr)
       implicit double precision (a-h,o-z)
       integer itwo
