@@ -179,7 +179,7 @@ c
       endif
       call dgedi(vc,2,2,ipvt,rcond,z,1)
       vc(1,2)=vc(1,2)/kappa
-      vc(2,1)=vc(1,2)
+      vc(2,1)=vc(1,2)/2
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
       return
