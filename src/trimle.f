@@ -181,5 +181,6 @@ c
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
+      vc(2,2)=1111
       return
       end
