@@ -176,6 +176,7 @@ c
          vc(2,1)=0.d0
          vc(2,2)=0.d0
          ierr=4
+         Print "(i6)", ierr
          if (ijob.eq.0) kappa=0.d0
          return
       endif
