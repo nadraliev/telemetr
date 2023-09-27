@@ -163,10 +163,6 @@ c
             kappa=500.d0
          endif
       endif
-      Print "(f6.4)", cbar
-      Print "(f6.4)", kapinv
-      Print "(f6.4)", kappa
-      Print "(i6)", ierr
       vc(1,2)=vc(1,2)*(-0.5)
       vc(2,1)=vc(1,2)
       call dgeco(vc,itwo,itwo,ipvt,rcond,z)
@@ -176,11 +172,19 @@ c
          vc(2,1)=0.d0
          vc(2,2)=0.d0
          ierr=4
-         Print "(i6)", ierr
+         print *,' ierr 4'
          if (ijob.eq.0) kappa=0.d0
          return
       endif
       call dgedi(vc,2,2,ipvt,rcond,z,1)
+      Print *, 'cbar'
+      Print "(f6.4)", cbar
+      Print *, 'kapinv'
+      Print "(f6.4)", kapinv
+      Print *, 'kappa'
+      Print "(f6.4)", kappa
+      Print *, 'ierr'
+      Print "(i6)", ierr
       vc(1,2)=vc(1,2)/kappa
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
