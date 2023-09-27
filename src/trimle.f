@@ -70,6 +70,7 @@ c
 c
 c   initial coor and vc to missing values
 c
+      test=1
       do 10 i=1,itwo
          coor(i)=0.d0
          do 10 j=1,itwo
