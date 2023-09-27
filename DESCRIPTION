@@ -1,7 +1,7 @@
 Package: telemetr
 Type: Package
 Title: Radio Direction-finding Telemetry code
-Version: 0.3
+Version: 0.4
 Date: 2012-08-01
 Author: Barry Rowlingson <b.rowlingson@gmail.com>
 Maintainer: Barry Rowlingson <b.rowlingson@gmail.com>
