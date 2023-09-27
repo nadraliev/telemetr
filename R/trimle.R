@@ -43,6 +43,7 @@ trimle <- function(xytower,bearing,ijob=1,kappa=1,sd=2.5){
     )
 
   covmat = matrix(c(res$vc[1],res$vc[2],res$vc[3],res$vc[4]),ncol=2)
+  print(covmat)
   cor = cov2cor(covmat)[1,2]
   se.xy = sqrt(diag(covmat))
   
