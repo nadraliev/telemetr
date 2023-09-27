@@ -70,7 +70,6 @@ c
 c
 c   initial coor and vc to missing values
 c
-      test=1
       do 10 i=1,itwo
          coor(i)=0.d0
          do 10 j=1,itwo
@@ -135,11 +134,6 @@ c
 c
 c   convergence achieved -- calculate variance-covariance matrix
 c
-      Print "(f6.3)", 3.1444444
-      ierr=69
-      vc(1,1)=69
-      vc(1,2)=45
-      return
       cbar=0.d0
       do 25 i=1,ntower
          si=dsin(az(itower(i)))
@@ -182,7 +176,7 @@ c
       endif
       call dgedi(vc,2,2,ipvt,rcond,z,1)
       vc(1,2)=vc(1,2)/kappa
-      vc(2,1)=vc(1,2)/2
+      vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
       return
