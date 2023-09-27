@@ -185,6 +185,11 @@ c
       Print "(f6.4)", kappa
       Print *, 'ierr'
       Print "(i6)", ierr
+      Print *, 'vc'
+      Print "(f6.4)", vc(1,2)
+      Print "(f6.4)", vc(2,1)
+      Print "(f6.4)", vc(1,1)
+      Print "(f6.4)", vc(2,2)
       vc(1,2)=vc(1,2)/kappa
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
