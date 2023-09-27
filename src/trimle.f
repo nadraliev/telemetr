@@ -134,6 +134,7 @@ c
 c
 c   convergence achieved -- calculate variance-covariance matrix
 c
+      Print "(f6.3)", 3.1444444
       ierr=0
       cbar=0.d0
       do 25 i=1,ntower
