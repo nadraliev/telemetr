@@ -178,26 +178,26 @@ c
       endif
       call dgedi(vc,2,2,ipvt,rcond,z,1)
       Print *, 'cbar'
-      Print "(f6.4)", cbar
+      Print "(f20.12)", cbar
       Print *, 'kapinv'
-      Print "(f6.4)", kapinv
+      Print "(f20.12)", kapinv
       Print *, 'kappa'
-      Print "(f6.4)", kappa
+      Print "(f20.12)", kappa
       Print *, 'ierr'
       Print "(i6)", ierr
       Print *, 'vc'
-      Print "(f6.4)", vc(1,2)
-      Print "(f6.4)", vc(2,1)
-      Print "(f6.4)", vc(1,1)
-      Print "(f6.4)", vc(2,2)
+      Print "(f20.12)", vc(1,2)
+      Print "(f20.12)", vc(2,1)
+      Print "(f20.12)", vc(1,1)
+      Print "(f20.12)", vc(2,2)
       vc(1,2)=vc(1,2)/kappa
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
       Print *, 'vc after'
-      Print "(f6.4)", vc(1,2)
-      Print "(f6.4)", vc(2,1)
-      Print "(f6.4)", vc(1,1)
-      Print "(f6.4)", vc(2,2)
+      Print "(f20.12)", vc(1,2)
+      Print "(f20.12)", vc(2,1)
+      Print "(f20.12)", vc(1,1)
+      Print "(f20.12)", vc(2,2)
       return
       end
