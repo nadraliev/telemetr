@@ -194,5 +194,10 @@ c
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
+      Print *, 'vc after'
+      Print "(f6.4)", vc(1,2)
+      Print "(f6.4)", vc(2,1)
+      Print "(f6.4)", vc(1,1)
+      Print "(f6.4)", vc(2,2)
       return
       end
