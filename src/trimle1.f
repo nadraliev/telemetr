@@ -162,8 +162,8 @@ c
             kappa=500.d0
          endif
       endif
-      Print "cbar (f6.4)", cbar
-      Print "kapinv (f6.4)", kapinv
+      Print "(cbar f6.4)", cbar
+      Print "(kapinv f6.4)", kapinv
       vc(1,2)=vc(1,2)*(-0.5)
       vc(2,1)=vc(1,2)
       call dgeco(vc,itwo,itwo,ipvt,rcond,z)
