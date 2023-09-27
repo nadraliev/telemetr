@@ -164,7 +164,7 @@ c
       endif
       Print "(f6.4)", cbar
       Print "(f6.4)", kapinv
-      Print "f(6.4)", kappa
+      Print "(f6.4)", kappa
       vc(1,2)=vc(1,2)*(-0.5)
       vc(2,1)=vc(1,2)
       call dgeco(vc,itwo,itwo,ipvt,rcond,z)
