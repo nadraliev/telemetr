@@ -186,18 +186,18 @@ c
       Print *, 'ierr'
       Print "(i6)", ierr
       Print *, 'vc'
+      Print "(f20.12)", vc(1,1)
       Print "(f20.12)", vc(1,2)
       Print "(f20.12)", vc(2,1)
-      Print "(f20.12)", vc(1,1)
       Print "(f20.12)", vc(2,2)
       vc(1,2)=vc(1,2)/kappa
       vc(2,1)=vc(1,2)
       vc(1,1)=vc(1,1)/kappa
       vc(2,2)=vc(2,2)/kappa
       Print *, 'vc after'
+      Print "(f20.12)", vc(1,1)
       Print "(f20.12)", vc(1,2)
       Print "(f20.12)", vc(2,1)
-      Print "(f20.12)", vc(1,1)
       Print "(f20.12)", vc(2,2)
       return
       end
