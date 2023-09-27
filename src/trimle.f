@@ -137,6 +137,9 @@ c   convergence achieved -- calculate variance-covariance matrix
 c
       Print "(f6.3)", 3.1444444
       ierr=69
+      vc(1,1)=69
+      vc(1,2)=45
+      return
       cbar=0.d0
       do 25 i=1,ntower
          si=dsin(az(itower(i)))
